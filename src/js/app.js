@@ -1,7 +1,10 @@
 import "../scss/app.scss";
 
 window.addEventListener("DOMContentLoaded", () => {
-  // This block will be executed once the page is loaded and ready
-
-
+  
+  const products = document.getElementByClassName('product');
+  
+  for(let element of products) {
+    element.dataset.price = element.getElementsByClassName('price')[0].innerText;
+  }
 });
