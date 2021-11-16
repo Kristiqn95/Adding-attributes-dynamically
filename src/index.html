@@ -9,6 +9,14 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".add-attr").click(function(){            
+            $('input[type="data-price"]').attr("data-price", "data-price");
+        });
+    });
+</script> 
   <body>
     <div class="main">
       <div class="card product">
@@ -46,5 +54,7 @@
         </div>
       </div>
     </div>
+       <button type="button" class="add-attr">Select Data-Price</button>
+       <input type="data-price"> 
   </body>
 </html>
